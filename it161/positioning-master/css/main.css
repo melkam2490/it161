@@ -1,10 +1,9 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
 
 html {
-    background-color: rgb(211, 211, 211);
+    background-color: lightgray;
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -25,7 +24,7 @@ body{
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #610c58;
+    background: #fff;
     line-height: 2.5em;
 }
 /*
@@ -44,7 +43,7 @@ h1.page-header{
  
 
  main.wrapper {
-    background-color: rgb(200, 200,200);
+    background-color: white;
     overflow: auto;
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -79,6 +78,122 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+
+/* start positioning styles */
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+ 
+ 
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+   /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media all and (max-width:500px) {
+    .my-column {
+        width: 100%;
+      }
+ }
+ 
+ 
+
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+ 
+ 
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+
+ .social-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px 25px;
+ }
+ /* flexible image rules start here */
+
+
+.flexible img{
+    width:100%;
+ }
+ 
+ 
+ .flexible{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ 
+ 
+ /* flexible image rules end here */
+ 
+  
+ 
+
+
+
+
+
+
+/* end positioning styles */
+
+
+
+
+
+
 
 /* Responsive rules */
 

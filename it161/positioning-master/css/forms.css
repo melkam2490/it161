@@ -15,10 +15,10 @@ form>div {
 		
 /* writes to small text above reCAPTCHA upon failure */
 .dateFeedback{
-    font-style:oblique;
+    font-style:italic;
     font-size:70%;
     font-weight:bold;
-    color:rgb(0, 255, 115);
+    color:#f00;
 }
 
 input:required {
@@ -26,7 +26,7 @@ input:required {
 }
 
 input:optional, textarea:optional {
-     background: color #f2f2f2;
+     background-color:#f1f1f1;
      border:1px solid #ccc;
 }
 
